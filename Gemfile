@@ -12,10 +12,13 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'active_model_serializers'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
+  gem 'pry-rails', '= 0.3.4'
+  gem 'pry', '~> 0.10', require: false
+  gem 'pry-doc', require: false
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
